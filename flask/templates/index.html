@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員系統</title>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap.min.js.map">
+    <link rel="stylesheet" href="static/bootstrap.css.map">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        #content {
+            /* background-image: url(/789.jpg); */
+            background-color: #6699CC;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: calc(100% - 60px);
+            overflow: scroll;
+            overflow-x: hidden;
+            /* overflow-y: hidden; */
+
+        }
+
+        nav {
+            height: 60px;
+        }
+
+
+
+        #message {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: black;
+            height: 5vh;
+
+        }
+
+        #text {
+            width: 100%;
+            font-size: 1.5em;
+            border-width: 3px;
+        }
+
+        .pic {
+            height: 100%;
+        }
+
+
+        html {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 95vh;">
+        <nav class="navbar navbar-expand-lg bg-dark" ;>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/test" style="color:  white;">登入 / 註冊</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </nav>
+
+        <!-- <div id="content"> -->
+
+        <div class="container-fluid" id="content" style="">
+            <!-- <form id="message">
+                <input type="text" id="text" name="text">
+                <button type="submit">送出</button>
+            </form> -->
+            <div class="bubbleWrapper">
+                <div class="inlineContainer">
+                    <img class="inlineIcon"
+                        src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+                    <div class="otherBubble other">
+                        <a style="color:white" name="voi">你好，我是機器人，你可以跟我打「招呼」，也可以做「練習」哦！</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="message">
+            <textarea class="form-control" id="text" name="text" cols="30" rows="10"></textarea>
+            <!-- <input type="text" id="text" name="text"> -->
+            <button class="btn btn-light" type="submit" id="send" style="font-size: 0.8em;height: 5vh;">送出</button>
+            <button class="btn btn-light" name="talk" id="talk" type="button"
+                style="font-size: 0.8em;height: 5vh;">說話</button>
+
+        </form>
+    </div>
+
+    <!-- <div class="bubbleWrapper">
+        <div class="inlineContainer">
+            <img class="inlineIcon"
+                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+            <div class="otherBubble other">
+                <a style="color:white" id="robot"></a>
+            </div>
+        </div><span class="other">08:41</span>
+    </div> -->
+    <!-- <div class="bubbleWrapper">
+        <div class="inlineContainer own">
+            <img class="inlineIcon"
+                src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png">
+            <div class="ownBubble own">
+                The first rule of being a ninja is, 'Do no harm.'
+            </div>
+        </div><span class="own">08:55</span>
+    </div>
+    <div class="bubbleWrapper">
+        <div class="inlineContainer">
+            <img class="inlineIcon"
+                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+            <div class="otherBubble other">
+                Knowing when to leave requires training.
+            </div>
+        </div>
+    </div><span class="other">10:13</span>
+    <div class="bubbleWrapper">
+        <div class="inlineContainer own">
+            <img class="inlineIcon"
+                src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png">
+            <div class="ownBubble own">
+                Stunned but impressed.
+            </div>
+        </div><span class="own">11:07</span>
+    </div>
+    <div class="bubbleWrapper">
+        <div class="inlineContainer">
+            <img class="inlineIcon"
+                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+            <div class="otherBubble other">
+                How about throwing stars?
+            </div>
+        </div><span class="other">11:11</span>
+    </div> -->
+
+
+
+
+
+</body>
+<script>
+    function get_time() {
+        var dt = new Date();
+        var time = dt.getHours() + ":" + dt.getMinutes();
+        return time
+    }
+    $(document).ready(function () {
+        $('form').on('submit', function (event) {
+            $('#content').append(
+                '<div class="bubbleWrapper">\
+                    <div class="inlineContainer own">\
+                        <img class="inlineIcon"\
+                            src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png">\
+                        <div class="ownBubble own">' + $('#text').val() + '\
+                        </div>\
+                    </div><span class="own">'+ get_time() + '</span>\
+                </div>')
+            // 滾輪拉到最下面
+            $("#content").scrollTop($("#content")[0].scrollHeight);
+            event.preventDefault();
+            $.ajax({
+                url: '/msgsend',
+                data: {
+                    text: $('#text').val()
+                },
+                type: 'POST',
+                dataType: "json",
+            })
+
+                .done(function (data) {
+                    // data = JSON.stringify(data)
+                    console.log(typeof (data))
+                    // console.log(data)
+                    data.forEach(ee => {
+
+                        if (ee['type'] == 'text') {
+                            $('#content').append(
+                                '<div class="bubbleWrapper">\
+                    <div class= "inlineContainer" >\
+                            <img class="inlineIcon"\
+                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                            <div class="otherBubble other">\
+                                <a style="color:white" id="robot" name="voi">' + ee['data'] + '</a>\
+                            </div>\
+                        </div><span class="other">'+ get_time() + '</span>\
+                    </div > ')
+                            $("#content").scrollTop($("#content")[0].scrollHeight);
+                            // voiceplay(ee['data']);
+                            console.log(data.length)
+                            if (data.length >= 3) {
+                                setTimeout(voiceplay(ee['data']), 3000)
+                            } else {
+                                voiceplay(ee['data'])
+                            }
+                        }
+                        else if (ee['type'] == 'image') {
+                            $('#content').append(
+                                '<div class="bubbleWrapper">\
+                    <div class= "inlineContainer" >\
+                            <img class="inlineIcon"\
+                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                        </div><span class="other">'+ get_time() + '</span>\
+                        <div class="otherBubble other">\
+                                <img class="pic"\
+                                src="'+ ee['data'] + '">\
+                            </div>\
+                    </div > ')
+                            $("#content").scrollTop($("#content")[0].scrollHeight);
+                            // voiceplay(ee['data']);
+                        }
+                        else if (ee['type'] == 'video') {
+                            $('#content').append(
+                                '<div class="bubbleWrapper">\
+                    <div class= "inlineContainer" >\
+                            <img class="inlineIcon"\
+                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                        </div><span class="other">'+ get_time() + '</span>\
+                        <div class="otherBubble other">\
+                                <iframe width="560" height="315" src="'+ ee['data'] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\
+                            </div>\
+                    </div > ')
+                            $("#content").scrollTop($("#content")[0].scrollHeight);
+                            // voiceplay(ee['data']);
+
+                        }
+                        $('#text').val('')
+
+
+                    });
+                    // if (typeof (data) === "string") {
+                    //     $('#text').val('')
+                    //     $('#content').append(
+                    //         '<div class="bubbleWrapper">\
+                    // <div class= "inlineContainer" >\
+                    //         <img class="inlineIcon"\
+                    //             src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                    //         <div class="otherBubble other">\
+                    //             <a style="color:white" id="robot" name="voi">' + data + '</a>\
+                    //         </div>\
+                    //     </div><span class="other">'+ get_time() + '</span>\
+                    // </div > ')
+                    //     $("#content").scrollTop($("#content")[0].scrollHeight);
+                    //     voiceplay(data);
+
+                    // }
+                    // else if (data["pic"].includes('.jpg')) {
+                    //     console.log(data["data"]);
+                    //     console.log(data["pic"]);
+                    //     $('#text').val('')
+                    //     $('#content').append(
+                    //         '<div class="bubbleWrapper">\
+                    // <div class= "inlineContainer" >\
+                    //         <img class="inlineIcon"\
+                    //             src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                    //         <div class="otherBubble other">\
+                    //             <a style="color:white" id="robot" name="voi">' + data["data"] + '</a>\
+                    //         </div>\
+                    //     </div><span class="other">'+ get_time() + '</span>\
+                    //     <div class="otherBubble other">\
+                    //             <img class="pic"\
+                    //             src="'+ data["pic"] + '">\
+                    //         </div>\
+                    // </div > ')
+                    //     $("#content").scrollTop($("#content")[0].scrollHeight);
+                    //     voiceplay(data["data"]);
+
+                    // }
+
+                    // else {
+                    //     console.log(JSON.parse(data))
+                    //     console.log(data["data"]);
+                    //     console.log(data["pic"]);
+                    //     $('#text').val('')
+                    //     $('#content').append(
+                    //         '<div class="bubbleWrapper">\
+                    // <div class= "inlineContainer" >\
+                    //         <img class="inlineIcon"\
+                    //             src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                    //         <div class="otherBubble other">\
+                    //             <a style="color:white" id="robot" name="voi">' + data["data"] + '</a>\
+                    //         </div>\
+                    //     </div><span class="other">'+ get_time() + '</span>\
+                    //     <div class="otherBubble other">\
+                    //             <iframe width="560" height="315" src="'+ data["pic"] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\
+                    //         </div>\
+                    // </div > ')
+                    //     $("#content").scrollTop($("#content")[0].scrollHeight);
+                    //     voiceplay(data["data"]);
+                    // }
+
+                    // $('#text').val('')
+                    // $('#content').append(
+                    //     '<div class="bubbleWrapper">\
+                    // <div class= "inlineContainer" >\
+                    //         <img class="inlineIcon"\
+                    //             src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                    //         <div class="otherBubble other">\
+                    //             <a style="color:white" id="robot" name="voi">' + data + '</a>\
+                    //         </div>\
+                    //     </div><span class="other">'+ get_time() + '</span>\
+                    // </div > ')
+                    // $("#content").scrollTop($("#content")[0].scrollHeight);
+                    // voiceplay(data);
+
+
+                })
+
+
+
+        })
+        $('#text').val('')
+    })
+
+    // enter送出
+    $("#text").keypress(function (e) {
+        if (e.which === 13 && !e.shiftKey) {
+            e.preventDefault();
+
+            $(this).closest("form").submit();
+        }
+    });
+
+
+    // 語音
+
+    const msg = new SpeechSynthesisUtterance();
+    let voices = [];
+    msg.text = document.querySelector('[name="voi"]').text;
+
+    function populateVoices() {
+        voices = this.getVoices();
+    }
+    speechSynthesis.addEventListener('voiceschanged', populateVoices);
+
+    function voiceplay(text) {
+        msg.text = text
+        // msg.text = document.querySelector('[name="voi"]').text;
+
+
+        // msg.voice = voices.
+        //     msg.voice = voices.find(voice => voice.name === 'Google 國語（臺灣）');
+        // speechSynthesis.speak(msg);
+
+
+        msg.voice = voices.find(voice => voice.name === 'Google 國語（臺灣）');
+        speechSynthesis.speak(msg);
+    }
+    speechSynthesis.addEventListener('play', voiceplay);
+
+
+
+
+    // 語音識別
+    var recognition = new webkitSpeechRecognition();
+    var show = document.getElementById('text');
+    var send = document.getElementById('send');
+    var talk = document.getElementById('talk');
+    var recognition = new webkitSpeechRecognition();
+
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.lang = "cmn-Hant-TW";
+
+    recognition.onstart = function () {
+        console.log('開始辨識');
+    };
+    recognition.onend = function () {
+        setTimeout(recognition.stop(), 5000);
+        send.click();
+    };
+
+    recognition.onresult = function (event) {
+        var i = event.resultIndex;
+        var j = event.results[i].length - 1;
+        show.value = event.results[i][j].transcript;
+        // recognition.stop();
+        // setTimeout(recognition.stop(), 5000);
+
+    };
+
+    talk.addEventListener("click", function () {
+        recognition.start();
+    })
+
+    // talk.addEventListener("click", function () {
+    //     recognition.start();
+    // })
+
+
+
+
+
+</script>
+
+</html>

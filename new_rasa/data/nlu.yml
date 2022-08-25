@@ -1,0 +1,303 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - 嗨
+    - 早安
+    - 午安
+    - 你好
+    - hi
+    - 妳好
+    - 您好
+    - 下午好
+    - 嗨嗨
+    - 晚安
+    - 嗨，機器人
+    - 機器人你好
+    
+
+- intent: happy
+  examples: |
+    - 今天覺得開心
+    - 開心
+    - 還不錯
+    - 快樂
+    - 高興
+    - 有趣
+    - 今天很開心
+    - 今天很高興
+    - 心情很好
+    - 心情不錯
+    - 心情好
+    - 愉快
+    - 今天過得很快樂
+    - 今天過的很開心
+    - 很棒
+    - 很讚
+    - 很開心
+    - 很高興
+    - 好
+
+
+- intent: unhappy
+  examples: |
+    - 不好
+    - 不開心
+    - 不高興
+    - 不愉快
+    - 很生氣
+    - 生氣
+    - 難過
+    - 很難過
+    - 氣死
+    - 想哭
+    - 今天很糟
+    - 糟透了
+    - 今天很難過
+    - 悲傷
+    - 今天是悲傷的一天
+    - 過的不開心
+    - 今天過的不開心
+    - 今天心情很差
+    - 今天很難過
+    - 今天很不爽
+    - 很不爽
+    - 很不愉快
+    - 很生氣
+
+- intent: affirm
+  examples: |
+    - 有
+    - 變好了
+    - 感覺變開心了
+- intent: deny
+  examples: |
+    - 沒有
+    - 還是不開心
+    - 還是很難過
+    - 沒變好
+
+
+- intent: train
+  examples: |
+    - 要
+    - 要練習
+    - 練習
+    - 我要練習
+    - 我想練習
+    - 我要練習
+    - 練習變好
+- intent: train2
+    - 不要
+    - 不做練習
+    - 不練習
+    - 下次再練習
+
+- intent: addition1
+  examples: |
+    - 別人表現比我好
+    - 別人表現比我好的時候不高興
+    - 別人表現很好
+    - 我表現比別人不好
+    - 看到別人表現好
+
+
+- intent: addition2
+  examples: |
+    - 想跟別人玩
+    - 想跟別人玩會好好表達
+    - 跟別人說要一起玩
+
+
+
+- intent: solve
+  examples: |
+    - 稱讚同學
+    - 稱讚別人的表現
+    - 我可以稱讚別人
+    - 稱讚別人
+    - 稱讚他的表現
+    - 稱讚表現
+    - 讚美他
+    - 讚美他的表現
+    - 讚美別人
+    - 讚美
+    - 我可以稱讚同學的表現
+
+
+- intent: solve2
+  examples: |
+    - 我會遵守規則，可以一起玩嗎？
+    - 可以一起跟你們玩嗎？
+    - 想要跟你們一起玩可以嗎？
+    - 我想加入你們
+
+
+- intent: choice
+  examples: |
+    - 我會跟他說你好棒！
+    - 我會說你好棒
+    - 我會說你的表現 100分
+    - 我會說你表現得真好
+
+    
+- intent: say_yes
+  examples: |
+    - 學會了
+    - 我會了
+    - 我學會了
+    - 沒問題
+    - 有
+- intent: say_no
+  examples: |
+    - 不會
+    - 還不會
+    - 還要練習
+    - 還要想一下
+
+# - intent: ask_weather
+#   examples: |
+#     - 天氣如何
+#     - 天氣怎麼樣
+#     - 在下雨嗎
+#     - 天氣
+#     - 會下雨嗎
+#     - 會飄雨嗎
+#     - 有出太陽嗎
+#     - 是陰天嗎
+#     - 是晴天嗎
+#     - 會下雨嗎
+#     - 天氣好嗎
+#     - 天氣還好嗎
+
+# - intent: city
+#   examples: |
+#     - [台北市](city)
+#     - [新北市](city)
+#     - [桃園市](city)
+#     - [台中市](city)
+#     - [台南市](city)
+#     - [高雄市](city)
+#     - [新竹縣](city)
+#     - [苗栗縣](city)
+#     - [彰化縣](city)
+#     - [南投縣](city)
+#     - [雲林縣](city)
+#     - [嘉義縣](city)
+#     - [屏東縣](city)
+#     - [宜蘭縣](city)
+#     - [花蓮縣](city)
+#     - [台東縣](city)
+#     - [澎湖縣](city)
+#     - [金門縣](city)
+#     - [連江縣](city)
+#     - [基隆市](city)
+#     - [新竹市](city)
+#     - [嘉義市](city)
+
+# - intent: ask_weather+city
+#   examples: |
+#     - [台北市](city)天氣如何
+#     - [新北市](city)會下雨嗎
+#     - [桃園市](city)天氣怎麼樣
+#     - [台中市](city)天氣
+#     - [台南市](city)在下雨嗎
+#     - [高雄市](city)是晴天嗎
+#     - [新竹縣](city)會飄雨嗎
+#     - [苗栗縣](city)有出太陽嗎
+#     - [彰化縣](city)是陰天嗎
+#     - [南投縣](city)天氣好嗎
+#     - [雲林縣](city)天氣還好嗎
+#     - [嘉義縣](city)是大太陽嗎
+#     - [屏東縣](city)要帶傘嗎
+#     - [宜蘭縣](city)天氣如何
+#     - [花蓮縣](city)天氣怎樣
+#     - [台東縣](city)天氣晴朗嗎
+#     - [澎湖縣](city)有烏雲嗎
+#     - [金門縣](city)有出太陽嗎
+#     - [連江縣](city)天氣如何
+#     - [基隆市](city)天氣怎樣
+#     - [新竹市](city)天氣還好嗎
+#     - [嘉義市](city)會下雨嗎
+
+# - synonym: 台中市
+#   examples: |
+#     - 臺中
+#     - 臺中市
+#     - 台中
+
+# - synonym: 新北市
+#   examples: |
+#     - 新北
+
+# - synonym: 桃園市
+#   examples: |
+#     - 桃園
+
+# - synonym: 台北市
+#   examples: |
+#     - 臺北
+#     - 臺北市
+#     - 台北
+
+# - synonym: 台南市
+#   examples: |
+#     - 臺南市
+#     - 台南
+#     - 臺南
+
+# - synonym: 高雄市
+#   examples: |
+#     - 高雄
+
+# - synonym: 苗栗縣
+#   examples: |
+#     - 苗栗
+
+# - synonym: 彰化縣
+#   examples: |
+#     - 彰化
+
+# - synonym: 南投縣
+#   examples: |
+#     - 南投
+
+# - synonym: 雲林縣
+#   examples: |
+#     - 雲林
+
+# - synonym: 屏東縣
+#   examples: |
+#     - 屏東
+#     - 屏東市
+
+# - synonym: 宜蘭縣
+#   examples: |
+#     - 宜蘭
+
+# - synonym: 花蓮縣
+#   examples: |
+#     - 花連
+
+# - synonym: 台東縣
+#   examples: |
+#     - 台東
+#     - 臺東
+#     - 臺東縣
+
+# - synonym: 澎湖縣
+#   examples: |
+#     - 澎湖
+
+# - synonym: 金門縣
+#   examples: |
+#     - 金門
+
+# - synonym: 連江縣
+#   examples: |
+#     - 連江
+
+# - synonym: 基隆市
+#   examples: |
+#     - 基隆

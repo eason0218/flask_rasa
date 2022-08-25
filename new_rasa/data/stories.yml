@@ -1,0 +1,49 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_happy
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_bye
+
+- story: addition1
+  steps:
+  - intent: train
+  - action: utter_train
+  - intent: addition1
+  - action: utter_addition1
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve
+  - intent: solve
+  - action: utter_meth
+  - action: utter_choice
+  - intent: choice
+  - action: utter_end
+
+
+
+ 
