@@ -1,36 +1,49 @@
 version: "3.0"
 
 stories:
+#第一種行為
 
-- story: happy path
+- story: greet_path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_happy
+  - checkpoint: greet
+
+
+- story: happy_path
+  steps:
+  - checkpoint: greet
+  - intent: happy
   - action: utter_happy
+  - action: utter_pratic
+  - checkpoint: pratic_check
 
-- story: sad path 1
+
+- story: unhappy_path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - checkpoint: greet
+  - intent: unhappy
   - action: utter_unhappy
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_pratic
+  - checkpoint: pratic_check
 
-- story: sad path 2
+- story: unhappy_path2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - checkpoint: greet
+  - intent: unhappy
   - action: utter_unhappy
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_bye
+  - action: utter_deny2
+  - action: utter_pratic
+  - checkpoint: pratic_check
 
-- story: addition1
+- story: train_yes
   steps:
+  - checkpoint: pratic_check
   - intent: train
   - action: utter_train
   - intent: addition1
@@ -38,11 +51,153 @@ stories:
   - action: utter_video_end
   - intent: say_yes
   - action: utter_solve
+  - checkpoint: reply1
+
+- story: train_deny
+  steps:
+  - checkpoint: pratic_check
+  - intent: train2
+  - action: utter_bye
+
+
+- story: train_no
+  steps:
+  - checkpoint: pratic_check
+  - intent: train
+  - action: utter_train
+  - intent: addition1
+  - action: utter_addition1
+  - action: utter_video_end
+  - intent: say_no
+  - action: utter_again1
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve
+  - checkpoint: reply1
+
+- story: solve1
+  steps:
+  - checkpoint: reply1
   - intent: solve
-  - action: utter_meth
+  - action: utter_method
   - action: utter_choice
   - intent: choice
   - action: utter_end
+
+- story: solve2
+  steps:
+  - checkpoint: reply1
+  - intent: choice
+  - action: utter_end
+
+
+
+
+
+
+#第二種行為
+
+- story: train_yes2
+  steps:
+  - checkpoint: pratic_check
+  - intent: train
+  - action: utter_train
+  - intent: addition2
+  - action: utter_addition2
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve2
+  - checkpoint: reply2
+
+- story: train_no
+  steps:
+  - checkpoint: pratic_check
+  - intent: train
+  - action: utter_train
+  - intent: addition2
+  - action: utter_addition2
+  - action: utter_video_end
+  - intent: say_no
+  - action: utter_again2
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve2
+  - checkpoint: reply2
+
+- story: test
+  steps:
+  - checkpoint: reply2
+  - intent: solve2
+  - action: utter_reject
+  - intent: reject
+  - action: utter_end_2
+
+
+
+#第三種行為
+
+
+
+
+
+
+# - story: happy path_yes_train
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: happy
+#   - action: utter_happy
+#   - action: utter_pratic
+#   - intent: train
+#   - action: utter_train
+#   - intent: addition1
+#   - action: utter_addition1
+#   - action: utter_video_end
+#   - intent: say_yes
+#   - action: utter_solve
+#   - intent: solve
+#   - action: utter_method
+#   - action: utter_choice
+#   - intent: choice
+#   - action: utter_end
+
+
+
+# #心情不好變好的路徑
+# - story: unhappy path1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: unhappy
+#   - action: utter_unhappy
+#   - action: utter_did_that_help
+#   - intent: affirm #yes
+#   - action: utter_happy #happypath
+#   - action: utter_pratic #要練習嗎
+#   - intent: train # 要
+#   - action: utter_train
+#   - intent: addition1
+#   - action: utter_addition1
+#   - action: utter_video_end
+#   - intent: say_yes
+#   - action: utter_solve
+#   - intent: solve
+#   - action: utter_method
+#   - action: utter_choice
+#   - intent: choice
+#   - action: utter_end 
+
+# #心情不好沒變好的路徑
+
+
+# # - story: happy path_deny_train
+# #   steps:
+# #   - intent: greet
+# #   - action: utter_greet
+# #   - intent: happy
+# #   - action: utter_happy
+# #   - intent: train2
+# #   - action: utter_bye
 
 
 

@@ -16,6 +16,8 @@ intents:
   - choice
   - say_yes
   - say_no
+  - reject
+  - addition3
 
 
   
@@ -26,7 +28,7 @@ responses:
   utter_greet:
   - text: "嗨，今天你的心情如何?"
   - text: "你好，你今天心情還好嗎？"
-  - text: "你好，很高興可以跟你聊天，你今天心情還好嗎？"
+  - text: "你好，很高興可以跟你聊天，你今天的心情還好嗎？"
 
   utter_unhappy:
   - text: "沒關係！我說一個笑話給你聽！
@@ -48,9 +50,9 @@ responses:
   utter_happy:
   - text: "太好了！希望你繼續保持！"
     image: "https://i.pinimg.com/564x/62/0a/97/620a974d73f7cd229bd2af65f701bc71.jpg" 
-  - text: "太棒了！你可以回家後試著跟爸爸媽媽分享你的好心情！"
+  - text: "太棒了！你可以回家後試著跟爸爸媽媽分享！"
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdsIIOSXQVYUCh_9VcE3D4uvbtikm4kVqeXfhP--ZtDrQ6P8me0xcMi5tJdgzvj9A7gI&usqp=CAU"
-  - text: "太讚了！你可以跟老師分享你發生的好事！"
+  - text: "太讚了！你可以跟老師分享！"
     image: "https://i.pinimg.com/564x/69/1b/fa/691bfaedfd324fdd7b0410f54ac4e90a.jpg"
 
   
@@ -89,7 +91,7 @@ responses:
     image: "https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI"
   - text: "那我覺得你可以學習讚美別人！這樣大家都能高興！
            我們先來看一下別人怎麼做的！"
-    image: "https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI"
+    image: "https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI"
 
 
 
@@ -102,14 +104,39 @@ responses:
            如果同學上課正確回答問題，老師幫他加分你可以怎麼做？"
     image: "https://pic.616pic.com/ys_bnew_img/00/08/62/QrAwFBE9ox.jpg"
   - text: "那換你練習一下
-          如果同學上課正確回答問題，老師幫他加分你可以怎麼做？"
-    image: "https://pic.616pic.com/ys_bnew_img/00/08/62/QrAwFBE9ox.jpg"
+          如果同學跑步比賽表現得很好，你可以怎麼做？"
+    image: "https://img.tukuppt.com/png_preview/00/00/91/qBYAUtw8bq.jpg"
   - text: "那我們練習看看
-           如果同學上課正確回答問題，老師幫他加分你可以怎麼做？"
-    image: "https://pic.616pic.com/ys_bnew_img/00/08/62/QrAwFBE9ox.jpg"
+           如果同學考試拿到好成績，你可以怎麼做？"
+    image: "https://www.mdnkids.com/upload/images/20211122-08-01.jpg"
+
+
+  utter_solve2:
+  - text: "那我們練習一下
+           如果看到有人在打球，你想要加入怎麼辦？"
+    image: "https://images.chinatimes.com/newsphoto/2021-09-02/656/B05A00_P_04_02.jpg"
+  - text: "那我們練習看看
+           如果看到別人在玩積木，你想一起玩怎麼辦"
+    image: "https://www.beclass.com/share/202007/2343d055f067d2d87b231053r.jpg"
+  - text: "那換你練習一下
+           如果有人在玩桌遊，你想一起玩怎麼辦"
+    image: "https://img.ltn.com.tw/Upload/news/600/2016/03/22/1640369_2.jpg"
 
 
 
+
+
+  utter_again1:
+  - text: "那我們再看一次影片"
+    image: "https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI"
+  - text: "那請你再看一次影片"
+    image: "https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI"
+
+  utter_again2:
+  - text: "那我們再看一次影片"
+    image: "https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ"
+  - text: "那我們再看一下影片"
+    image: "https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ"
 
 
   utter_method:
@@ -127,13 +154,28 @@ responses:
 
 
   utter_addition2:
-  - text: 那你覺得可以怎麼跟同學說呢？
-  - text: 那你覺得可以怎麼表達呢？
+  - text: "那我覺得你可以詢問同學能不能一起玩，這樣大家都能玩到！
+          我們先來看一下示範！"
+    image: "https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ"
+
+  - text: "那我覺得你可以問問看同學能不能一起玩，這樣大家都能玩到！
+          我們先來看一下示範！"
+    image: "https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ"
 
   utter_reject:
-  - text: 如果被拒絕的話你可以找其他同學玩或是自己玩
-  - text: 被拒絕的話不要難過，也可以找其他同學玩
-  - text: 被拒絕的話不要傷心，可以自己玩或是找其他同學玩
+  - text: "沒錯！但是如果被拒絕的話怎麼辦？
+          1.找別的同學一起玩
+          2.自己玩
+          3.去玩別的遊戲"
+  - text: "答對了！如果被拒絕怎麼辦呢？
+          1.找別的同學一起玩
+          2.自己玩
+          3.去玩別的遊戲"
+  
+  utter_end_2:
+  - text: "很棒！之後要做到哦！這樣大家都能開心的玩！"
+  - text: "很好，之後要做到哦！這樣大家都能開心的玩！"
+  
 
 
 
