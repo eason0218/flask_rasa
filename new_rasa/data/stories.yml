@@ -138,6 +138,41 @@ stories:
 
 
 
+- story: test2
+  steps:
+  - checkpoint: pratic_check
+  - intent: train
+  - action: utter_train
+  - intent: addition3
+  - action: utter_addition3
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve3
+  - checkpoint: reply3
+
+
+- story: test3
+  steps:
+  - checkpoint: pratic_check
+  - intent: train
+  - action: utter_train
+  - intent: addition3
+  - action: utter_addition3
+  - action: utter_video_end
+  - intent: say_no
+  - action: utter_again3
+  - intent: say_yes
+  - action: utter_solve3
+  - checkpoint: reply3
+
+- story: test4
+  steps:
+  - checkpoint: reply3
+  - intent: solve3
+  - action: utter_end_3
+
+
+
 
 
 
@@ -202,3 +237,28 @@ stories:
 
 
  
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny2
+  - action: utter_pratic
+  - intent: train
+  - action: utter_train
+  - intent: addition1
+  - action: utter_addition1
+  - action: utter_video_end
+  - intent: say_no
+  - action: utter_again1
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve
+  - intent: solve
+  - action: utter_method
+  - action: utter_choice
+  - intent: choice
+  - action: utter_end

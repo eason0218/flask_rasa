@@ -1,185 +1,144 @@
-version: "3.0"
-
-intents:
-  - greet
-  - mood_great
-  - unhappy
-  - happy
-  - affirm
-  - deny
-  - train
-  - train2
-  - addition1
-  - addition2
-  - solve
-  - solve2
-  - choice
-  - say_yes
-  - say_no
-  - reject
-  - addition3
-
-
-  
-
-
-
-responses:
-  utter_greet:
-  - text: "嗨，今天你的心情如何?"
-  - text: "你好，你今天心情還好嗎？"
-  - text: "你好，很高興可以跟你聊天，你今天的心情還好嗎？"
-
-  utter_unhappy:
-  - text: "沒關係！我說一個笑話給你聽！
-            一位乘客坐在飛機上， 空中小姐問一個小女孩說：「為什麼飛機飛這麼高，都不會撞到星星呢？」
-            小女孩回答：「我知道，因為星星會『閃』...」"
-  - text: "沒事的！我講個笑話給你聽！
-             老師說:小明，請你用「糖」來造句。
-              小明:我在喝牛奶。
-              老師問:糖呢？
-              靈靈:在牛奶裡"
-  - text: "沒事的！你可以跟老師或朋友分享！一起加油！"
-    image: "https://i.pinimg.com/564x/81/e5/1a/81e51abb210d18f016ec11c38d05c46c.jpg"
-  - text: "沒問題的，一切都會變好！"
-    image: "https://i.pinimg.com/736x/c3/c7/50/c3c7502621f11b373e53eeb43e79e88a.jpg"
-  - text: "看個影片轉換一下心情吧！"
-    image: "https://www.youtube.com/embed/WPn1f_Pefx8"
-
-
-  utter_happy:
-  - text: "太好了！希望你繼續保持！"
-    image: "https://i.pinimg.com/564x/62/0a/97/620a974d73f7cd229bd2af65f701bc71.jpg" 
-  - text: "太棒了！你可以回家後試著跟爸爸媽媽分享！"
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdsIIOSXQVYUCh_9VcE3D4uvbtikm4kVqeXfhP--ZtDrQ6P8me0xcMi5tJdgzvj9A7gI&usqp=CAU"
-  - text: "太讚了！你可以跟老師分享！"
-    image: "https://i.pinimg.com/564x/69/1b/fa/691bfaedfd324fdd7b0410f54ac4e90a.jpg"
-
-  
-  utter_pratic:
-  - text: "今天要做練習嗎？"
-  - text: "今天要練習嗎？"
-
-
-  utter_did_that_help:
-  - text: "對你的心情有幫助嗎?"
-  - text: "心情有變好嗎?"
-
-  utter_deny:
-  - text: "你可以試試別的方法"
-  - text: "希望你能快點忘掉不開心的事"
-
-  utter_deny2:
-  - text: "那你可以跟老師或同學聊聊天！"
-  - text: "你可以試試著深呼吸 3 次！"
-  - text: "那你可以試著去找同學玩！"
-
-  utter_train:
-  - text: "你要練習的行為是什麼呢？"
-  - text: "你要練習什麼行為呢？"
-  - text: "要練習什麼行為呢？"
-
-  utter_bye:
-  - text: "沒關係！那我們下次見"
-    image: "https://p1.sa123.cc/wwlsj/tUjKEG2bWLhOJ3i8YmKXGeOpMkypslrsloXsm5fslePeewKIfgBsloDviksmslkFVL14slXt6bMetIsldaXYikWzr7j8TEq.jpg"
-  - text: "好的，那我們下次再見！"
-    image: "https://pic44.photophoto.cn/20170713/0005018663807904_b.jpg"
-
-  utter_addition1:
-  - text: "那我覺得你可以練習稱讚別人！這樣大家都會開心！
-           我們先來看一下別人怎麼做的！"
-    image: "https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI"
-  - text: "那我覺得你可以學習讚美別人！這樣大家都能高興！
-           我們先來看一下別人怎麼做的！"
-    image: "https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI"
-
-
-
-  utter_video_end:
-  - text: "看完影片之後，告訴我你有學會了嗎？"
-
-
-  utter_solve:
-  - text: "那換你來練習一下
-           如果同學上課正確回答問題，老師幫他加分你可以怎麼做？"
-    image: "https://pic.616pic.com/ys_bnew_img/00/08/62/QrAwFBE9ox.jpg"
-  - text: "那換你練習一下
-          如果同學跑步比賽表現得很好，你可以怎麼做？"
-    image: "https://img.tukuppt.com/png_preview/00/00/91/qBYAUtw8bq.jpg"
-  - text: "那我們練習看看
-           如果同學考試拿到好成績，你可以怎麼做？"
-    image: "https://www.mdnkids.com/upload/images/20211122-08-01.jpg"
-
-
-  utter_solve2:
-  - text: "那我們練習一下
-           如果看到有人在打球，你想要加入怎麼辦？"
-    image: "https://images.chinatimes.com/newsphoto/2021-09-02/656/B05A00_P_04_02.jpg"
-  - text: "那我們練習看看
-           如果看到別人在玩積木，你想一起玩怎麼辦"
-    image: "https://www.beclass.com/share/202007/2343d055f067d2d87b231053r.jpg"
-  - text: "那換你練習一下
-           如果有人在玩桌遊，你想一起玩怎麼辦"
-    image: "https://img.ltn.com.tw/Upload/news/600/2016/03/22/1640369_2.jpg"
-
-
-
-
-
-  utter_again1:
-  - text: "那我們再看一次影片"
-    image: "https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI"
-  - text: "那請你再看一次影片"
-    image: "https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI"
-
-  utter_again2:
-  - text: "那我們再看一次影片"
-    image: "https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ"
-  - text: "那我們再看一下影片"
-    image: "https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ"
-
-
-  utter_method:
-  - text: "沒錯！我有幾種讚美別人的方法，你會想用哪一種呢？"
-  - text: "沒錯！下面有幾種稱讚別人的方法，你會想用哪一種呢？"
-
-  utter_choice:
-  - text: "1.你好棒
-          2.你的表現 100分
-          3.你表現得真好"
-
-  utter_end:
-  - text: "很好！希望下次你能做到！！"
-  - text: "希望你下次能做到！"
-
-
-  utter_addition2:
-  - text: "那我覺得你可以詢問同學能不能一起玩，這樣大家都能玩到！
-          我們先來看一下示範！"
-    image: "https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ"
-
-  - text: "那我覺得你可以問問看同學能不能一起玩，這樣大家都能玩到！
-          我們先來看一下示範！"
-    image: "https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ"
-
-  utter_reject:
-  - text: "沒錯！但是如果被拒絕的話怎麼辦？
-          1.找別的同學一起玩
-          2.自己玩
-          3.去玩別的遊戲"
-  - text: "答對了！如果被拒絕怎麼辦呢？
-          1.找別的同學一起玩
-          2.自己玩
-          3.去玩別的遊戲"
-  
-  utter_end_2:
-  - text: "很棒！之後要做到哦！這樣大家都能開心的玩！"
-  - text: "很好，之後要做到哦！這樣大家都能開心的玩！"
-  
-
-
-
-
+version: '3.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- deny
+- say_yes
+- solve
+- unhappy
+- choice
+- addition1
+- say_no
+- train
+- mood_great
+- happy
+- affirm
+- train2
+- addition2
+- solve2
+- reject
+- addition3
+- solve3
+responses:
+  utter_greet:
+  - text: 嗨，今天你的心情如何?
+  - text: 你好，你今天心情還好嗎？
+  - text: 你好，很高興可以跟你聊天，你今天的心情還好嗎？
+  utter_unhappy:
+  - text: 沒關係！我說一個笑話給你聽！ 一位乘客坐在飛機上， 空中小姐問一個小女孩說：「為什麼飛機飛這麼高，都不會撞到星星呢？」 小女孩回答：「我知道，因為星星會『閃』...」
+  - text: 沒事的！我講個笑話給你聽！ 老師說:小明，請你用「糖」來造句。 小明:我在喝牛奶。 老師問:糖呢？ 靈靈:在牛奶裡
+  - text: 沒事的！你可以跟老師或朋友分享！一起加油！
+    image: https://i.pinimg.com/564x/81/e5/1a/81e51abb210d18f016ec11c38d05c46c.jpg
+  - text: 沒問題的，一切都會變好！
+    image: https://i.pinimg.com/736x/c3/c7/50/c3c7502621f11b373e53eeb43e79e88a.jpg
+  - text: 看個影片轉換一下心情吧！
+    image: https://www.youtube.com/embed/WPn1f_Pefx8
+  utter_happy:
+  - text: 太好了！希望你繼續保持！
+    image: https://i.pinimg.com/564x/62/0a/97/620a974d73f7cd229bd2af65f701bc71.jpg
+  - text: 太棒了！你可以回家後試著跟爸爸媽媽分享！
+    image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdsIIOSXQVYUCh_9VcE3D4uvbtikm4kVqeXfhP--ZtDrQ6P8me0xcMi5tJdgzvj9A7gI&usqp=CAU
+  - text: 太讚了！你可以跟老師分享！
+    image: https://i.pinimg.com/564x/69/1b/fa/691bfaedfd324fdd7b0410f54ac4e90a.jpg
+  utter_pratic:
+  - text: 今天要做練習嗎？
+  - text: 今天要練習嗎？
+  utter_did_that_help:
+  - text: 對你的心情有幫助嗎?
+  - text: 心情有變好嗎?
+  utter_deny:
+  - text: 你可以試試別的方法
+  - text: 希望你能快點忘掉不開心的事
+  utter_deny2:
+  - text: 那你可以跟老師或同學聊聊天！
+  - text: 你可以試試著深呼吸 3 次！
+  - text: 那你可以試著去找同學玩！
+  utter_train:
+  - text: 你要練習的行為是什麼呢？
+  - text: 你要練習什麼行為呢？
+  - text: 要練習什麼行為呢？
+  utter_bye:
+  - text: 沒關係！那我們下次見
+    image: https://p1.sa123.cc/wwlsj/tUjKEG2bWLhOJ3i8YmKXGeOpMkypslrsloXsm5fslePeewKIfgBsloDviksmslkFVL14slXt6bMetIsldaXYikWzr7j8TEq.jpg
+  - text: 好的，那我們下次再見！
+    image: https://pic44.photophoto.cn/20170713/0005018663807904_b.jpg
+  utter_addition1:
+  - text: 那我覺得你可以練習稱讚別人！這樣大家都會開心！ 我們先來看一下別人怎麼做的！
+    image: https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI
+  - text: 那我覺得你可以學習讚美別人！這樣大家都能高興！ 我們先來看一下別人怎麼做的！
+    image: https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI
+  utter_video_end:
+  - text: 看完影片之後，告訴我你有學會了嗎？
+  utter_solve:
+  - text: 那換你來練習一下 如果同學上課正確回答問題，老師幫他加分你可以怎麼做？
+    image: https://pic.616pic.com/ys_bnew_img/00/08/62/QrAwFBE9ox.jpg
+  - text: 那換你練習一下 如果同學跑步比賽表現得很好，你可以怎麼做？
+    image: https://img.tukuppt.com/png_preview/00/00/91/qBYAUtw8bq.jpg
+  - text: 那我們練習看看 如果同學考試拿到好成績，你可以怎麼做？
+    image: https://www.mdnkids.com/upload/images/20211122-08-01.jpg
+  utter_solve2:
+  - text: 那我們練習一下 如果看到有人在打球，你想要加入怎麼辦？
+    image: https://images.chinatimes.com/newsphoto/2021-09-02/656/B05A00_P_04_02.jpg
+  - text: 那我們練習看看 如果看到別人在玩積木，你想一起玩怎麼辦
+    image: https://www.beclass.com/share/202007/2343d055f067d2d87b231053r.jpg
+  - text: 那換你練習一下 如果有人在玩桌遊，你想一起玩怎麼辦
+    image: https://img.ltn.com.tw/Upload/news/600/2016/03/22/1640369_2.jpg
+  utter_again1:
+  - text: 那我們再看一次影片
+    image: https://www.youtube.com/embed/F0cS9UW9_Bo?clip=UgkxDzWhfw7LJxb3bbDmLq7laBYl8b4C4OJF&amp;clipt=ELiUARi4kQI
+  - text: 那請你再看一次影片
+    image: https://www.youtube.com/embed/VemwS5n67uo?clip=UgkxmB2y1nilkbVfnGb7grirIZEBZQPqpe2B&amp;clipt=EIzEARiMwQI
+  utter_again2:
+  - text: 那我們再看一次影片
+    image: https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ
+  - text: 那我們再看一下影片
+    image: https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ
+  utter_method:
+  - text: 沒錯！我有幾種讚美別人的方法，你會想用哪一種呢？
+  - text: 沒錯！下面有幾種稱讚別人的方法，你會想用哪一種呢？
+  utter_choice:
+  - text: 1.你好棒 2.你的表現 100分 3.你表現得真好
+  utter_end:
+  - text: 很好！希望下次你能做到！！
+  - text: 希望你下次能做到！
+  utter_addition2:
+  - text: 那我覺得你可以詢問同學能不能一起玩，這樣大家都能玩到！ 我們先來看一下示範！
+    image: https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ
+  - text: 那我覺得你可以問問看同學能不能一起玩，這樣大家都能玩到！ 我們先來看一下示範！
+    image: https://www.youtube.com/embed/Ow4SDCoX2Oo?clip=Ugkx1Vp4BROl9LQ60PiiVzZtitKdx1Y-cZna&amp;clipt=EJjyARiImwQ
+  utter_reject:
+  - text: 沒錯！但是如果被拒絕的話怎麼辦？ 1.找別的同學一起玩 2.自己玩 3.去玩別的遊戲
+  - text: 答對了！如果被拒絕怎麼辦呢？ 1.找別的同學一起玩 2.自己玩 3.去玩別的遊戲
+  utter_end_2:
+  - text: 很棒！之後要做到哦！這樣大家都能開心的玩！
+  - text: 很好，之後要做到哦！這樣大家都能開心的玩！
+  utter_addition3:
+  - text: 那你說話的時候要記得保持禮貌，才不會傷害到別人！ 我們先來看一下這個影片！
+    image: https://www.youtube.com/embed/CTXMYmMbJFs
+  utter_solve3:
+  - text: 那我們來練習一下，如果老師提醒你不要在「走廊上奔跑」的時候怎麼辦？
+    image: https://watermark.lovepik.com/photo/20211201/large/lovepik-elementary-school-classroom-hall-running-picture_501379426.jpg
+  - text: 那我們練習看看，如果老師提醒你上課要「保持安靜」的時候怎麼辦？
+    image: https://www.rootedu.com/wp-content/uploads/2015/06/IMG_5519-1zhu.jpg
+  utter_again3:
+  - text: 那我們再看一次影片
+    image: https://www.youtube.com/embed/CTXMYmMbJFs
+  utter_end_3:
+  - text: 很棒！這樣老師或家長也不會生氣，要記得做到哦！
+  - text: 很好哦！要記得做到！
+actions:
+- utter_addition1
+- utter_again1
+- utter_choice
+- utter_deny2
+- utter_did_that_help
+- utter_end
+- utter_greet
+- utter_method
+- utter_pratic
+- utter_solve
+- utter_train
+- utter_unhappy
+- utter_video_end

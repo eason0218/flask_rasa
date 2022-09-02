@@ -1,5 +1,4 @@
 version: "3.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -15,8 +14,6 @@ nlu:
     - 晚安
     - 嗨，機器人
     - 機器人你好
-    
-
 - intent: happy
   examples: |
     - 今天覺得開心
@@ -39,8 +36,7 @@ nlu:
     - 很高興
     - 好
     - 很好
-
-
+    - 今天心情還不錯
 - intent: unhappy
   examples: |
     - 不好
@@ -61,13 +57,11 @@ nlu:
     - 過的不開心
     - 今天過的不開心
     - 今天心情很差
-    - 今天很難過
     - 今天很不爽
     - 很不爽
     - 很不愉快
-    - 很生氣
     - 很不好
-
+    - 今天心情不好
 - intent: affirm
   examples: |
     - 有
@@ -79,8 +73,6 @@ nlu:
     - 還是不開心
     - 還是很難過
     - 沒變好
-
-
 - intent: train
   examples: |
     - 要
@@ -88,15 +80,14 @@ nlu:
     - 練習
     - 我要練習
     - 我想練習
-    - 我要練習
     - 練習變好
+    - 要做練習
 - intent: train2
   examples: |
     - 不要
     - 不做練習
     - 不練習
     - 下次再練習
-
 - intent: addition1
   examples: |
     - 別人表現比我好
@@ -109,9 +100,6 @@ nlu:
     - 同學的表現比我好
     - 同學表現的很好
     - 同學有好表現
-    - 同學表現的很好
-
-
 - intent: addition2
   examples: |
     - 想跟別人玩
@@ -126,9 +114,6 @@ nlu:
     - 邀請別人一起玩
     - 邀請同學一起玩
     - 找朋友一起玩
-
-
-
 - intent: solve
   examples: |
     - 稱讚同學
@@ -142,8 +127,6 @@ nlu:
     - 讚美別人
     - 讚美
     - 我可以稱讚同學的表現
-
-
 - intent: solve2
   examples: |
     - 我會遵守規則，可以一起玩嗎？
@@ -161,8 +144,9 @@ nlu:
     - 要跟我一起去玩桌遊嗎
     - 我想一起玩
     - 要跟我一起玩嗎
-
-
+    - 問他們能不能讓我加入
+    - 問他們能不能加入
+    
 - intent: choice
   examples: |
     - 我會跟他說你好棒！
@@ -172,14 +156,12 @@ nlu:
     - 你好棒
     - 你的表現 100分
     - 你表現得真好
-
+    - 說你好棒
 - intent: reject
   examples: |
     - 找其他同學一起玩
     - 自己玩
     - 去玩別的遊戲
-
-    
 - intent: say_yes
   examples: |
     - 學會了
@@ -190,167 +172,26 @@ nlu:
     - 會了
 - intent: say_no
   examples: |
+    - 還沒學會
     - 不會
     - 還不會
     - 還要練習
     - 還要想一下
-
+    - 學不會
+    - 還沒
 
 - intent: addition3
   examples: |
-    - 對別人的建議感到生氣
-    - 對別人的意見覺得生氣
-    - 做錯事情被老師唸覺得生氣
-    - 做錯事情被家長唸覺得生氣
-    - 不接受別人的建議
-    
-
-
-
-
-
-# - intent: ask_weather
-#   examples: |
-#     - 天氣如何
-#     - 天氣怎麼樣
-#     - 在下雨嗎
-#     - 天氣
-#     - 會下雨嗎
-#     - 會飄雨嗎
-#     - 有出太陽嗎
-#     - 是陰天嗎
-#     - 是晴天嗎
-#     - 會下雨嗎
-#     - 天氣好嗎
-#     - 天氣還好嗎
-
-# - intent: city
-#   examples: |
-#     - [台北市](city)
-#     - [新北市](city)
-#     - [桃園市](city)
-#     - [台中市](city)
-#     - [台南市](city)
-#     - [高雄市](city)
-#     - [新竹縣](city)
-#     - [苗栗縣](city)
-#     - [彰化縣](city)
-#     - [南投縣](city)
-#     - [雲林縣](city)
-#     - [嘉義縣](city)
-#     - [屏東縣](city)
-#     - [宜蘭縣](city)
-#     - [花蓮縣](city)
-#     - [台東縣](city)
-#     - [澎湖縣](city)
-#     - [金門縣](city)
-#     - [連江縣](city)
-#     - [基隆市](city)
-#     - [新竹市](city)
-#     - [嘉義市](city)
-
-# - intent: ask_weather+city
-#   examples: |
-#     - [台北市](city)天氣如何
-#     - [新北市](city)會下雨嗎
-#     - [桃園市](city)天氣怎麼樣
-#     - [台中市](city)天氣
-#     - [台南市](city)在下雨嗎
-#     - [高雄市](city)是晴天嗎
-#     - [新竹縣](city)會飄雨嗎
-#     - [苗栗縣](city)有出太陽嗎
-#     - [彰化縣](city)是陰天嗎
-#     - [南投縣](city)天氣好嗎
-#     - [雲林縣](city)天氣還好嗎
-#     - [嘉義縣](city)是大太陽嗎
-#     - [屏東縣](city)要帶傘嗎
-#     - [宜蘭縣](city)天氣如何
-#     - [花蓮縣](city)天氣怎樣
-#     - [台東縣](city)天氣晴朗嗎
-#     - [澎湖縣](city)有烏雲嗎
-#     - [金門縣](city)有出太陽嗎
-#     - [連江縣](city)天氣如何
-#     - [基隆市](city)天氣怎樣
-#     - [新竹市](city)天氣還好嗎
-#     - [嘉義市](city)會下雨嗎
-
-# - synonym: 台中市
-#   examples: |
-#     - 臺中
-#     - 臺中市
-#     - 台中
-
-# - synonym: 新北市
-#   examples: |
-#     - 新北
-
-# - synonym: 桃園市
-#   examples: |
-#     - 桃園
-
-# - synonym: 台北市
-#   examples: |
-#     - 臺北
-#     - 臺北市
-#     - 台北
-
-# - synonym: 台南市
-#   examples: |
-#     - 臺南市
-#     - 台南
-#     - 臺南
-
-# - synonym: 高雄市
-#   examples: |
-#     - 高雄
-
-# - synonym: 苗栗縣
-#   examples: |
-#     - 苗栗
-
-# - synonym: 彰化縣
-#   examples: |
-#     - 彰化
-
-# - synonym: 南投縣
-#   examples: |
-#     - 南投
-
-# - synonym: 雲林縣
-#   examples: |
-#     - 雲林
-
-# - synonym: 屏東縣
-#   examples: |
-#     - 屏東
-#     - 屏東市
-
-# - synonym: 宜蘭縣
-#   examples: |
-#     - 宜蘭
-
-# - synonym: 花蓮縣
-#   examples: |
-#     - 花連
-
-# - synonym: 台東縣
-#   examples: |
-#     - 台東
-#     - 臺東
-#     - 臺東縣
-
-# - synonym: 澎湖縣
-#   examples: |
-#     - 澎湖
-
-# - synonym: 金門縣
-#   examples: |
-#     - 金門
-
-# - synonym: 連江縣
-#   examples: |
-#     - 連江
-
-# - synonym: 基隆市
-#   examples: |
-#     - 基隆
+    - 我會好好說話
+    - 做錯事的時候也會好好說話
+    - 我能好好說話
+    - 說話要有禮貌
+- intent: solve3
+  examples: |
+    - 我會記得的！
+    - 我會說謝謝老師！
+    - 馬上做到老師提醒的事
+    - 我會記得的
+    - 我會馬上做到老師提醒的事
+    - 謝謝老師
+    - 我會記得的，謝謝老師
