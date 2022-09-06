@@ -83,7 +83,7 @@
             <div class="bubbleWrapper">
                 <div class="inlineContainer">
                     <img class="inlineIcon"
-                        src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+                        src="https://cdn-icons-png.flaticon.com/512/1126/1126923.png?w=360">
                     <div class="otherBubble other">
                         <a style="color:white" name="voi">你好，我是機器人！</a>
                     </div>
@@ -164,7 +164,7 @@
                 '<div class="bubbleWrapper">\
                     <div class="inlineContainer own">\
                         <img class="inlineIcon"\
-                            src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png">\
+                            src="https://i02piccdn.sogoucdn.com/eccb83a248bea792">\
                         <div class="ownBubble own">' + $('#text').val() + '\
                         </div>\
                     </div><span class="own">'+ get_time() + '</span>\
@@ -192,7 +192,7 @@
                                 '<div class="bubbleWrapper">\
                     <div class= "inlineContainer" >\
                             <img class="inlineIcon"\
-                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
+                                src="https://cdn-icons-png.flaticon.com/512/1126/1126923.png?w=360">\
                             <div class="otherBubble other">\
                                 <a style="color:white" id="robot" name="voi">' + ee['data'] + '</a>\
                             </div>\
@@ -212,12 +212,12 @@
                                 '<div class="bubbleWrapper">\
                     <div class= "inlineContainer" >\
                             <img class="inlineIcon"\
-                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
-                        </div><span class="other">'+ get_time() + '</span>\
-                        <div class="otherBubble other">\
+                                src="https://cdn-icons-png.flaticon.com/512/1126/1126923.png?w=360">\
+                            <div class="otherBubble other">\
                                 <img class="pic"\
-                                src="'+ ee['data'] + '">\
+                                src="'+ ee['data']+'" style="height:20vw;width:20vw">\
                             </div>\
+                        </div><span class="other">'+ get_time() + '</span>\
                     </div > ')
                             $("#content").scrollTop($("#content")[0].scrollHeight);
                             // voiceplay(ee['data']);
@@ -227,11 +227,11 @@
                                 '<div class="bubbleWrapper">\
                     <div class= "inlineContainer" >\
                             <img class="inlineIcon"\
-                                src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">\
-                        </div><span class="other">'+ get_time() + '</span>\
-                        <div class="otherBubble other">\
+                                src="https://cdn-icons-png.flaticon.com/512/1126/1126923.png?w=360">\
+                            <div class="otherBubble other">\
                                 <iframe width="560" height="315" src="'+ ee['data'] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\
                             </div>\
+                        </div><span class="other">'+ get_time() + '</span>\
                     </div > ')
                             $("#content").scrollTop($("#content")[0].scrollHeight);
                             // voiceplay(ee['data']);
@@ -369,31 +369,33 @@
     var show = document.getElementById('text');
     var send = document.getElementById('send');
     var talk = document.getElementById('talk');
-    var recognition = new webkitSpeechRecognition();
+    // var recognition = new webkitSpeechRecognition();
 
-    recognition.continuous = true;
+    recognition.continuous = false;
     recognition.interimResults = true;
     recognition.lang = "cmn-Hant-TW";
 
     recognition.onstart = function () {
         console.log('開始辨識');
     };
-    recognition.onend = function () {
-        setTimeout(recognition.stop(), 5000);
-        send.click();
-    };
+    //recognition.onend = function () {
+      //  setTimeout(recognition.stop(), 5000);
+       // send.click();
+    //};
 
     recognition.onresult = function (event) {
         var i = event.resultIndex;
         var j = event.results[i].length - 1;
         show.value = event.results[i][j].transcript;
+        console.log('結束辨識')
+
         // recognition.stop();
         // setTimeout(recognition.stop(), 5000);
 
     };
 
     talk.addEventListener("click", function () {
-        recognition.start();
+        recognition.onstart();
     })
 
     // talk.addEventListener("click", function () {
