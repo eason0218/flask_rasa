@@ -92,6 +92,9 @@ nlu:
     - 我想練習
     - 練習變好
     - 要做練習
+    - 好啊
+    - 好
+    - 好阿
 - intent: train2
   examples: |
     - 不要
