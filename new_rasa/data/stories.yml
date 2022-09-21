@@ -85,6 +85,38 @@ stories:
   - intent: choice
   - action: utter_end
 
+
+- story: pratic1
+  steps:
+  - intent: train
+  - action: utter_train
+  - intent: addition1
+  - action: utter_addition1
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve
+  - intent: solve_all
+  - action: utter_method
+  - action: utter_choice
+  - intent: choice
+  - action: utter_end
+
+- story: pratic1_1
+  steps:
+  - intent: train
+  - action: utter_train
+  - intent: addition1
+  - action: utter_addition1
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve
+  - intent: choice
+  - action: utter_end
+
+
+
+
+
 # - story: solve1
 #   steps:
 #   - checkpoint: reply1
@@ -190,7 +222,19 @@ stories:
   - action: utter_end_2
 
 
-
+- story: pratic2
+  steps:
+  - intent: train
+  - action: utter_train
+  - intent: addition2
+  - action: utter_addition2
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve2
+  - intent: solve2
+  - action: utter_reject
+  - intent: reject
+  - action: utter_end_2
 #第三種行為
 
 
@@ -229,7 +273,17 @@ stories:
   - action: utter_end_3
 
 
-
+- story: pratic3
+  steps:
+  - intent: train
+  - action: utter_train
+  - intent: addition3
+  - action: utter_addition3
+  - action: utter_video_end
+  - intent: say_yes
+  - action: utter_solve3
+  - intent: solve3
+  - action: utter_end_3
 
 
 
