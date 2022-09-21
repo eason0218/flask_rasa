@@ -6,7 +6,12 @@ intents:
 - greet
 - deny
 - say_yes
-- solve
+- solve_run
+- solve_grades
+- solve_handsup
+- solve_champion
+- solve_homework
+- solve_speak
 - unhappy
 - choice
 - addition1
@@ -77,12 +82,24 @@ responses:
   utter_video_end:
   - text: 看完影片之後，告訴我你有學會了嗎？
   utter_solve:
-  - text: 那換你來練習一下 如果同學上課正確回答問題，老師幫他加分你可以怎麼做？
+  - text: 那換你來練習一下，如果同學上課正確回答問題，老師幫他加分你可以怎麼做？
     image: https://www.clipartkey.com/mpngs/m/319-3194346_student-raise-hand-clipart.png
-  - text: 那換你練習一下 如果同學跑步比賽表現得很好，你可以怎麼做？
+  - text: 那換你練習，如果同學上課正確回答問題，老師幫他加分你可以怎麼做？
+    image: https://2.bp.blogspot.com/-_VefdYoCZ8U/U9y_teqbFCI/AAAAAAAAjho/hb0kdr4KL28/s800/jugyou_fukei.png
+  - text: 那換你練習一下，如果同學跑步比賽表現得很好，你可以怎麼做？
     image: https://img.freepik.com/premium-vector/funny-little-children-running-outside_29937-4003.jpg
-  - text: 那我們練習看看 如果同學考試拿到好成績，你可以怎麼做？
-    image: https://www.mdnkids.com/upload/images/20211122-08-01.jpg
+  - text: 那換你練習看看，如果同學跑步比賽拿到好成績，你可以怎麼做？
+    image: https://4.bp.blogspot.com/-43_VZxR60go/WGnPdSxhdCI/AAAAAAABA7Y/oeBVxwA8O2QU1Wq638fxU9MNRS_zctwQwCLcB/s800/sports_run_syoumen_woman_zekken.png
+  - text: 那我們練習一下，如果同學考試拿到好成績，你可以怎麼做？
+    image: https://2.bp.blogspot.com/-ev3bi44yzXQ/W959-5-nf6I/AAAAAAABP6c/i4cRD2SwjMgxt3IDKlyCunU_vzAjbR1IwCLcBGAs/s800/test_touan_100ten.png
+  - text: 那我們練習看看，如果同學考試拿到好成績，你可以怎麼做？
+    image: https://www.eisai.org/user_images/blogs/thumb/55013/202106181911241.jpg
+  - text: 如果同學得獎，上台接受表揚你可以怎麼做？
+    image: https://1.bp.blogspot.com/-dpEU6eEp4Dw/WvQICR0gBEI/AAAAAAABL_k/1k9ET8vnNNcrLDw4_NQTh_OgkQc61kV1QCLcBGAs/s800/trophy_school_girl.png
+  - text: 如果同學上台抽背誦表現很棒，你可以怎麼做？
+    image: https://1.bp.blogspot.com/-tw65fwukM88/WtRzamu1z1I/AAAAAAABLmQ/p0Znn36xGmoEVjkwg814YDKElG74p1y6wCLcBGAs/s800/school_kokuban_happyou_tenkousei_man.png
+  - text: 如果看到同學很認真的在完成作業，你可以怎麼做？
+    image: https://1.bp.blogspot.com/-uiFYNuLvH-I/Xrea7X0pqJI/AAAAAAABY1Y/tWvSM8LiG_g0beUs2FxpLVoENjxUCO8SACNcBGAsYHQ/s1600/study_school_jugyou_girl.png
   utter_solve2:
   - text: 那我們練習一下 如果看到有人在打球，你想要加入怎麼辦？
     image: https://images.chinatimes.com/newsphoto/2021-09-02/656/B05A00_P_04_02.jpg
@@ -103,8 +120,18 @@ responses:
   utter_method:
   - text: 沒錯！我有幾種讚美別人的方法，你會想用哪一種呢？
   - text: 沒錯！下面有幾種稱讚別人的方法，你會想用哪一種呢？
-  utter_choice:
-  - text: 1.你好棒 2.你的表現 100分 3.你表現得真好
+  utter_run_choice:
+  - text: 1.你跑得真快，體力真好！ 2.你表現的真棒！ 3.你的速度好快，真是厲害！
+  utter_grades_choice:
+  - text: 1.你考了好高的分數，我覺得你好棒！ 2.你好厲害，我要向你看齊！ 3.你都寫對了！表現的真好！
+  utter_handsup_choice:
+  - text: 1.你上課好認真，都能正確回答老師的問題！ 2.你表現的真好，太棒了！ 3.你真厲害，能正確回答問題！
+  utter_champion_choice:
+  - text: 1.大家都為你的表現開心，你真是太厲害了！ 2.恭喜你！你一定很努力！ 3.你好認真參與比賽，而且得到很好的成績，真是太棒了！
+  utter_speak_choice:
+  - text: 1.你的背誦真流暢！太厲害了！ 2.你比上次又更進步了呢！ 3.你上台都不會緊張，而且表現得真好！
+  utter_homework_choice:
+  - text: 1.你今天好認真的在寫作業喔！ 2.你真棒！這麼快就在完成作業了！ 3.哇！你真是太認真了，是大家的好榜樣！
   utter_end:
   - text: 很好！希望下次你能做到！！
   - text: 希望你下次能做到！
