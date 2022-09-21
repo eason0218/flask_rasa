@@ -75,59 +75,69 @@ stories:
   - action: utter_solve
   - checkpoint: reply1
 
-- story: solve1
+
+- story: solve_all
   steps:
   - checkpoint: reply1
-  - intent: solve_run
+  - intent: solve_all
   - action: utter_method
-  - action: utter_run_choice
+  - action: utter_choice
   - intent: choice
   - action: utter_end
 
-- story: solve2
-  steps:
-  - checkpoint: reply1
-  - intent: solve_grades
-  - action: utter_method
-  - action: utter_grades_choice
-  - intent: choice
-  - action: utter_end
+# - story: solve1
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_run
+#   - action: utter_method
+#   - action: utter_run_choice
+#   - intent: choice
+#   - action: utter_end
 
-- story: solve3
-  steps:
-  - checkpoint: reply1
-  - intent: solve_handsup
-  - action: utter_method
-  - action: utter_handsup_choice
-  - intent: choice
-  - action: utter_end
+# - story: solve2
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_grades
+#   - action: utter_method
+#   - action: utter_grades_choice
+#   - intent: choice
+#   - action: utter_end
 
-- story: solve4
-  steps:
-  - checkpoint: reply1
-  - intent: solve_champion
-  - action: utter_method
-  - action: utter_champion_choice
-  - intent: choice
-  - action: utter_end
+# - story: solve3
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_handsup
+#   - action: utter_method
+#   - action: utter_handsup_choice
+#   - intent: choice
+#   - action: utter_end
 
-- story: solve5
-  steps:
-  - checkpoint: reply1
-  - intent: solve_speak
-  - action: utter_method
-  - action: utter_speak_choice
-  - intent: choice
-  - action: utter_end
+# - story: solve4
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_champion
+#   - action: utter_method
+#   - action: utter_champion_choice
+#   - intent: choice
+#   - action: utter_end
 
-- story: solve6
-  steps:
-  - checkpoint: reply1
-  - intent: solve_homework
-  - action: utter_method
-  - action: utter_homework_choice
-  - intent: choice
-  - action: utter_end
+# - story: solve5
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_speak
+#   - action: utter_method
+#   - action: utter_speak_choice
+#   - intent: choice
+#   - action: utter_end
+
+# - story: solve6
+#   steps:
+#   - checkpoint: reply1
+#   - intent: solve_homework
+#   - action: utter_method
+#   - action: utter_homework_choice
+#   - intent: choice
+#   - action: utter_end
 
 
 

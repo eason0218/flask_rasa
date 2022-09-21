@@ -12,6 +12,7 @@ intents:
 - solve_champion
 - solve_homework
 - solve_speak
+- solve_all
 - unhappy
 - choice
 - addition1
@@ -120,21 +121,23 @@ responses:
   utter_method:
   - text: 沒錯！我有幾種讚美別人的方法，你會想用哪一種呢？
   - text: 沒錯！下面有幾種稱讚別人的方法，你會想用哪一種呢？
-  utter_run_choice:
-  - text: 1.你跑得真快，體力真好！ 2.你表現的真棒！ 3.你的速度好快，真是厲害！
-  utter_grades_choice:
-  - text: 1.你考了好高的分數，我覺得你好棒！ 2.你好厲害，我要向你看齊！ 3.你都寫對了！表現的真好！
-  utter_handsup_choice:
-  - text: 1.你上課好認真，都能正確回答老師的問題！ 2.你表現的真好，太棒了！ 3.你真厲害，能正確回答問題！
-  utter_champion_choice:
-  - text: 1.大家都為你的表現開心，你真是太厲害了！ 2.恭喜你！你一定很努力！ 3.你好認真參與比賽，而且得到很好的成績，真是太棒了！
-  utter_speak_choice:
-  - text: 1.你的背誦真流暢！太厲害了！ 2.你比上次又更進步了呢！ 3.你上台都不會緊張，而且表現得真好！
-  utter_homework_choice:
-  - text: 1.你今天好認真的在寫作業喔！ 2.你真棒！這麼快就在完成作業了！ 3.哇！你真是太認真了，是大家的好榜樣！
+  utter_choice:
+  - text: 1.跟他說你好棒 2.跟他說你的表現 100分 3.跟他說你表現的真好 4.(你自己想到的方法)
+  # utter_run_choice:
+  # - text: 1.你跑得真快，體力真好！ 2.你表現的真棒！ 3.你的速度好快，真是厲害！
+  # utter_grades_choice:
+  # - text: 1.你考了好高的分數，我覺得你好棒！ 2.你好厲害，我要向你看齊！ 3.你都寫對了！表現的真好！
+  # utter_handsup_choice:
+  # - text: 1.你上課好認真，都能正確回答老師的問題！ 2.你表現的真好，太棒了！ 3.你真厲害，能正確回答問題！
+  # utter_champion_choice:
+  # - text: 1.大家都為你的表現開心，你真是太厲害了！ 2.恭喜你！你一定很努力！ 3.你好認真參與比賽，而且得到很好的成績，真是太棒了！
+  # utter_speak_choice:
+  # - text: 1.你的背誦真流暢！太厲害了！ 2.你比上次又更進步了呢！ 3.你上台都不會緊張，而且表現得真好！
+  # utter_homework_choice:
+  # - text: 1.你今天好認真的在寫作業喔！ 2.你真棒！這麼快就在完成作業了！ 3.哇！你真是太認真了，是大家的好榜樣！
   utter_end:
   - text: 很好！希望下次你能做到！！
-  - text: 希望你下次能做到！
+  - text: 很棒哦！希望你下次能做到！
   utter_addition2:
   - text: 那我覺得你可以詢問同學能不能一起玩，這樣大家都能玩到！ 我們先來看一下示範！
     image: https://www.youtube.com/embed/ymRATyZE09U?clip=UgkxtmvYQ4faQuCW1CMn8YMOx6mbJiqe1tOR&amp;clipt=EJDLARjQgwQ

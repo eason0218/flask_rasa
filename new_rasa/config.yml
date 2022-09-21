@@ -68,7 +68,8 @@ policies:
 #     max_history: 5
 #     epochs: 100
   - name: TEDPolicy
-    # max_history: 5 參考的歷史訊息次數 沒設置是看全部
+    max_history: 10 
+    #參考的歷史訊息次數 沒設置是看全部
     epochs: 100 #訓練 100次
 #     constrain_similarities: true
 
