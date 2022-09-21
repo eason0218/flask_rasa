@@ -13,6 +13,7 @@ intents:
 - solve_homework
 - solve_speak
 - solve_all
+- solve
 - unhappy
 - choice
 - addition1
