@@ -77,12 +77,15 @@ nlu:
     - 變開心了
     - 心情有變好
     - 有變好
+    - 有幫助
 - intent: deny
   examples: |
     - 沒有
     - 還是不開心
     - 還是很難過
     - 沒變好
+    - 沒幫助
+    - 沒用
 - intent: train
   examples: |
     - 要
