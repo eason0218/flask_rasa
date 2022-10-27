@@ -156,8 +156,14 @@ responses:
   utter_solve3:
   - text: 那我們來練習一下，如果老師提醒你不要在「走廊上奔跑」的時候怎麼辦？
     image: https://watermark.lovepik.com/photo/20211201/large/lovepik-elementary-school-classroom-hall-running-picture_501379426.jpg
-  - text: 那我們練習看看，如果老師提醒你上課要「保持安靜」的時候怎麼辦？
+  - text: 那我們練習看看，如果老師或同學提醒你上課要「保持安靜」的時候怎麼辦？
     image: https://www.rootedu.com/wp-content/uploads/2015/06/IMG_5519-1zhu.jpg
+  - text: 那我們來練習看看，當老師或同學提醒你把口罩戴好時，你可以怎麼做？
+    image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfRbuLP49e9iB57f0-3T8njZltlhOgYdfznwweIv188dpYuH7r
+  - text: 那我們來練習看看，當老師或同學提醒你排隊要排好時，你可以怎麼做？
+    image: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPs-xTtmQi_VF5W0jbEl9H1vknsG1mKctCXLjZAMTX5IQvKa9p
+  - text: 那我們練習看看，當老師或助理員提醒你不要對同學惡作劇時，你可以怎麼做？
+    image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlw1VQS4HnSkwDeWcGZTgrS6vtcDbMeOADogEkaXFMQVG4qURS
   utter_again3:
   - text: 那我們再看一次影片
     image: https://www.youtube.com/embed/CTXMYmMbJFs
