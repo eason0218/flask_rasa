@@ -1,0 +1,298 @@
+[
+  {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "say_no",
+      "confidence": 0.16554224491119385
+    }
+  },
+  {
+    "text": "下午好",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.5185559391975403
+    }
+  },
+  {
+    "text": "有趣",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9881780743598938
+    }
+  },
+  {
+    "text": "想哭",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "addition2",
+      "confidence": 0.3358708322048187
+    }
+  },
+  {
+    "text": "還是很難過",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "unhappy",
+      "confidence": 0.48401907086372375
+    }
+  },
+  {
+    "text": "沒幫助",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8737908601760864
+    }
+  },
+  {
+    "text": "好",
+    "intent": "train",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.9963514804840088
+    }
+  },
+  {
+    "text": "你好強",
+    "intent": "choice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9871047735214233
+    }
+  },
+  {
+    "text": "還要練習",
+    "intent": "say_no",
+    "intent_prediction": {
+      "name": "train",
+      "confidence": 0.9617999792098999
+    }
+  },
+  {
+    "text": "妳好",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.5810351371765137
+    }
+  },
+  {
+    "text": "糟透了",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "say_yes",
+      "confidence": 0.7671937942504883
+    }
+  },
+  {
+    "text": "沒變好",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "train",
+      "confidence": 0.4037991464138031
+    }
+  },
+  {
+    "text": "沒問題",
+    "intent": "say_yes",
+    "intent_prediction": {
+      "name": "choice",
+      "confidence": 0.9971977472305298
+    }
+  },
+  {
+    "text": "您好",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "train",
+      "confidence": 0.419599711894989
+    }
+  },
+  {
+    "text": "愉快",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "unhappy",
+      "confidence": 0.9915033578872681
+    }
+  },
+  {
+    "text": "很讚",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "solve_all",
+      "confidence": 0.9856007695198059
+    }
+  },
+  {
+    "text": "不開心",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.49335581064224243
+    }
+  },
+  {
+    "text": "好啊",
+    "intent": "train",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.5275885462760925
+    }
+  },
+  {
+    "text": "我表現比別人不好",
+    "intent": "addition1",
+    "intent_prediction": {
+      "name": "unhappy",
+      "confidence": 0.5838841795921326
+    }
+  },
+  {
+    "text": "找其他同學一起玩",
+    "intent": "reject",
+    "intent_prediction": {
+      "name": "addition2",
+      "confidence": 0.9938421249389648
+    }
+  },
+  {
+    "text": "你喜歡看什麼卡通",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "choice",
+      "confidence": 0.9999992847442627
+    }
+  },
+  {
+    "text": "你好",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "choice",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "還好",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "say_no",
+      "confidence": 0.45818227529525757
+    }
+  },
+  {
+    "text": "不高興",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.45692965388298035
+    }
+  },
+  {
+    "text": "今天很糟",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.746971845626831
+    }
+  },
+  {
+    "text": "今天心情很差",
+    "intent": "unhappy",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.9835461378097534
+    }
+  },
+  {
+    "text": "有",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.5298922657966614
+    }
+  },
+  {
+    "text": "有幫助",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8166807889938354
+    }
+  },
+  {
+    "text": "練習變好",
+    "intent": "train",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9183557629585266
+    }
+  },
+  {
+    "text": "我想一起玩",
+    "intent": "solve2",
+    "intent_prediction": {
+      "name": "addition2",
+      "confidence": 0.9639920592308044
+    }
+  },
+  {
+    "text": "有",
+    "intent": "say_yes",
+    "intent_prediction": {
+      "name": "happy",
+      "confidence": 0.5298922657966614
+    }
+  },
+  {
+    "text": "我會先跟同學道歉",
+    "intent": "solve3",
+    "intent_prediction": {
+      "name": "addition2",
+      "confidence": 0.8370248675346375
+    }
+  },
+  {
+    "text": "我會跟同學道歉",
+    "intent": "solve3",
+    "intent_prediction": {
+      "name": "addition2",
+      "confidence": 0.8788387179374695
+    }
+  },
+  {
+    "text": "今天過的很開心",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "unhappy",
+      "confidence": 0.9653998017311096
+    }
+  },
+  {
+    "text": "好",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "train",
+      "confidence": 0.9948350191116333
+    }
+  },
+  {
+    "text": "不會",
+    "intent": "say_no",
+    "intent_prediction": {
+      "name": "say_yes",
+      "confidence": 0.7672840356826782
+    }
+  },
+  {
+    "text": "幫我寫作業",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "choice",
+      "confidence": 0.9998587369918823
+    }
+  }
+]

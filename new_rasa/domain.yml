@@ -68,9 +68,9 @@ responses:
   - text: 你可以試試著深呼吸 3 次！
   - text: 那你可以試著去找同學玩！
   utter_train:
-  - text: 你要練習的行為是什麼呢？
-  - text: 你要練習什麼行為呢？
-  - text: 要練習什麼行為呢？
+  - text: 你要練習的行為是什麼呢？ 1.別人表現好的時候我可以怎麼做？ 2.想跟同學一起玩可以怎麼做？ 3.練習有禮貌的說話
+  - text: 你要練習什麼行為呢？ 1.別人表現好的時候我可以怎麼做？ 2.想跟同學一起玩可以怎麼做？ 3.練習有禮貌的說話
+  - text: 要練習什麼行為呢？ 1.別人表現好的時候我可以怎麼做？ 2.想跟同學一起玩可以怎麼做？ 3.練習有禮貌的說話
   utter_bye:
   - text: 沒關係！那我們下次見
     image: https://st2.depositphotos.com/3827765/5443/v/600/depositphotos_54439009-stock-illustration-leaving.jpg

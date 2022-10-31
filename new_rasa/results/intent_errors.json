@@ -1,0 +1,10 @@
+[
+  {
+    "text": "好",
+    "intent": "happy",
+    "intent_prediction": {
+      "name": "train",
+      "confidence": 0.7689312100410461
+    }
+  }
+]
